@@ -1,185 +1,165 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toko Kuliner Legendaris - Rujak Cingur & Es Jadul</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Warung legend</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
         body {
-            background-color: #f7f9fa;
+            font-family: Arial, sans-serif;
+            background-color: #fff8f0;
+            margin: 0;
+            padding: 15px;
             color: #333;
         }
-
-        header {
-            background-color: #2e7d32;
-            color: white;
+        h1 {
             text-align: center;
-            padding: 2rem 1rem;
+            color: #d35400;
+            background-color: #ffeaa7;
+            padding: 15px;
+            border-radius: 10px;
         }
-
-        header h1 {
-            margin-bottom: 0.5rem;
+        h2 {
+            color: #e17055;
+            border-bottom: 2px solid #fab1a0;
+            padding-bottom: 5px;
         }
-
-        .container {
-            max-width: 1000px;
-            margin: 2rem auto;
-            padding: 0 1rem;
+        h3 {
+            color: #2d3436;
         }
-
-        .menu-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .card {
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .card img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-        }
-
-        .card-content {
-            padding: 1.5rem;
-        }
-
-        .card-title {
-            font-size: 1.4rem;
-            margin-bottom: 0.5rem;
-            color: #2e7d32;
-        }
-
-        .card-description {
-            font-size: 0.95rem;
-            color: #666;
-            margin-bottom: 1rem;
-            line-height: 1.4;
-        }
-
-        .price {
-            font-size: 1.25rem;
-            font-weight: bold;
-            color: #e65100;
-            margin-bottom: 1.5rem;
-        }
-
-        .btn-wa {
-            display: inline-block;
-            width: 100%;
-            text-align: center;
-            background-color: #25d366;
-            color: white;
+        a {
             text-decoration: none;
-            padding: 0.8rem;
-            border-radius: 8px;
+            color: #0984e3;
             font-weight: bold;
-            transition: background 0.3s;
+            margin: 0 5px;
         }
-
-        .btn-wa:hover {
-            background-color: #128c7e;
+        a:hover {
+            color: #d63031;
         }
-
+        .menu-box {
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        img {
+            border-radius: 10px;
+            margin: 10px 0;
+            border: 2px solid #fab1a0;
+        }
+        input[type=number] {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 80px;
+        }
+        input[type=submit] {
+            background-color: #25D366;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+        input[type=submit]:hover {
+            background-color: #128C7E;
+        }
         footer {
             text-align: center;
-            padding: 2rem;
-            background-color: #333;
-            color: white;
-            margin-top: 3rem;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ffeaa7;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Warung Rasa Nusantara</h1>
-        <p>Nikmati Kelezatan Rujak Cingur Asli & Segarnya Es Jadul</p>
-    </header>
+    <h1>🥗 Warung Rujak Cingur  🍹🍬</h1>
+    <p style="text-align:center;">"Rujak, Legen, Snack Anak Komplit"</p>
+    <hr>
 
-    <div class="container">
-        <div class="menu-grid">
-            
-            <!-- Menu 1: Rujak Cingur -->
-            <div class="card">
-                <!-- Ganti src dengan link foto Rujak Cingur Anda sendiri -->
-                <img src="foto/rujakjawa1.jpeg" alt="Rujak Cingur">
-                <div class="card-content">
-                    <div class="card-title">Rujak jawa</div>
-                    <p class="card-description">Rujak khas Jawa Timur dengan isian cingur sapi empuk, buah-buahan segar, sayuran, tahu, tempe, dan disiram bumbu petis udang yang mantap.</p>
-                    <div class="price">Rp 15.000</div>
-                    <!-- Ganti nomor 6281234567890 dengan nomor WhatsApp Anda -->
-                    <a href="https://wa.me/qr/HSFWLFQTX67BI1" target="_blank" class="btn-wa">
-                        Pesat Lewat WhatsApp
-                    </a>
-                </div>
-            </div>
-           <div class="card">
-                <!-- Ganti src dengan link foto Rujak Cingur Anda sendiri -->
-                <img src="foto/rujakcingur1.jpeg" alt="Rujak Cingur">
-                <div class="card-content">
-                    <div class="card-title">Rujak Cingur Spesial</div>
-                    <p class="card-description">Rujak cingur dengan isian cingur sapi empuk, buah-buahan segar, sayuran, tahu, tempe, dan disiram bumbu petis udang yang mantap.</p>
-                    <div class="price">Rp 17.000</div>
-                    <!-- Ganti nomor 6281234567890 dengan nomor WhatsApp Anda -->
-                    <a href="https://wa.me/qr/HSFWLFQTX67BI1" target="_blank" class="btn-wa">
-                        Pesat Lewat WhatsApp
-                    </a>
-                </div>
-           </div>
+    <h2>Menu</h2>
+    <div style="text-align:center;">
+        <a href="#rujak">Rujak Cingur</a> | 
+        <a href="#es">Es Legen</a> | 
+    </div>
+    <hr>
 
-            <!-- Menu 2: Es Jadul -->
-            <div class="card">
-                <!-- Ganti src dengan link foto Es Jadul Anda sendiri -->
-                <img src="foto/esgabus.jpeg" alt="Es gabus">
-                <div class="card-content">
-                    <div class="card-title">Es gabus</div>
-                    <p class="card-description">Segarnya es gabus jadul dengan varian rasa buah-buahan berlumur sirup merah manis alami. Mengembalikan memori manis masa kecil Anda.</p>
-                    <div class="price">Rp 5.000</div>
-                    <!-- Ganti nomor 6281234567890 dengan nomor WhatsApp Anda -->
-                    <a href="https://wa.me/qr/HSFWLFQTX67BI1" target="_blank" class="btn-wa">
-                        Pesan Lewat WhatsApp
-                    </a>
-                </div>
-            </div>
-          <div class="card">
-                <!-- Ganti src dengan link foto Es Jadul Anda sendiri -->
-                <img src="foto/esserut.jpeg" alt="Es serut">
-                <div class="card-content">
-                    <div class="card-title">Es gabus</div>
-                    <p class="card-description">Segarnya es serut jadul dengan varian rasa buah-buahan berlumur sirup merah manis alami. Mengembalikan memori manis masa kecil Anda.</p>
-                    <div class="price">Rp 5.000</div>
-                    <!-- Ganti nomor 6281234567890 dengan nomor WhatsApp Anda -->
-                    <a href="https://wa.me/qr/HSFWLFQTX67BI1" target="_blank" class="btn-wa">
-                        Pesan Lewat WhatsApp
-                    </a>
-                </div>
-          </div>
-
-        </div>
+    <h2 id="rujak">MENU RUJAK CINGUR</h2>
+    
+    <div class="menu-box">
+        <h3>Rujak jawa - Rp 17.000</h3>
+        <img src="foto/rujakjawa1.jpeg" alt="Rujak jawa" width="200">
+        <form onsubmit="kirimWA(event, 'Rujak jawa', 17000)">
+            <label>Jumlah Porsi: </label>
+            <input type="number" min="1" value="1">
+            <input type="submit" value="Pesan Sekarang">
+        </form>
     </div>
 
+    <div class="menu-box">
+        <h3>Rujak Cingur Komplit - Rp 15.000</h3>
+        <img src="foto/rujakcingur1.jpeg" alt="Rujak Cingur Komplit" width="200">
+        <form onsubmit="kirimWA(event, 'Rujak cingur Komplit', 15000)">
+            <label>Jumlah Porsi: </label>
+            <input type="number" min="1" value="1">
+            <input type="submit" value="Pesan Sekarang">
+        </form>
+    </div>
+
+    <h2 id="es">MENU ES LEGEN</h2>
+
+    <div class="menu-box">
+        <h3>Es Legen Original - Rp 3.000</h3>
+        <img src="foto/esgabus.jpeg" alt="Es gabus" width="200">
+        <form onsubmit="kirimWA(event, 'Es gabus Original', 3000)">
+            <label>Jumlah Gelas: </label>
+            <input type="number" min="1" value="1">
+            <input type="submit" value="Pesan Sekarang">
+        </form>
+    </div>
+    
+    <div class="menu-box">
+        <h3>Es Campur - Rp 5.000</h3>
+        <img src="foto/esserut.jpeg" alt="Es serut" width="200">
+        <form onsubmit="kirimWA(event, 'Es serut', 5000)">
+            <label>Jumlah Gelas: </label>
+            <input type="number" min="1" value="1">
+            <input type="submit" value="Pesan Sekarang">
+        </form>
+    </div>
+
+
+
+    <h2 id="kontak">KONTAK & ALAMAT</h2>
+    <p>WA: 085847693683</p>
+    <p>Alamat: Jl. tengah sawah, Kedung Maling</p>
+    <p>Buka: 10.00 - 21.00 WIB</p>
+
     <footer>
-        <p>&copy; 2026 Warung Rasa Nusantara. Semua Hak Dilindungi.</p>
+        <p>© 2026 Warung legend</p>
     </footer>
 
+<script>
+function kirimWA(event, nama, harga){
+    event.preventDefault();
+    var jumlah = event.target.querySelector('input[type=number]').value;
+    var total = jumlah * harga;
+    var pesan = "Halo Mbak nisa, saya mau pesan:%0A" 
+                + nama + " sebanyak " + jumlah + "%0A"
+                + "Total: Rp " + total + "%0A"
+                + "Alamat: %0A" 
+                + "Terima kasih";
+    
+    var noWA = "6285847693683"; 
+    var link = "https://wa.me/qr/HSFWLFQTX67BI1" + noWA + "?text=" + pesan; // UDAH DIBENERIN
+    window.open(link, '_blank');
+}
+</script>
 </body>
-  </html>
+                </html>
