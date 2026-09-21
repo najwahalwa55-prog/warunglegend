@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Kuliner Legendaris - Rujak Cingur & Es Jadul</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f7f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        header h1 {
+            margin-bottom: 0.5rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card-title {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            color: #2e7d32;
+        }
+
+        .card-description {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .price {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #e65100;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-wa {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            background-color: #25d366;
+            color: white;
+            text-decoration: none;
+            padding: 0.8rem;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn-wa:hover {
+            background-color: #128c7e;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #333;
+            color: white;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Warung Rasa Nusantara</h1>
+        <p>Nikmati Kelezatan Rujak Cingur Asli & Segarnya Es Jadul</p>
+    </header>
+
+    <div class="container">
+        <div class="menu-grid">
+            
+            <!-- Menu 1: Rujak Cingur -->
+            <div class="card">
+                <!-- Ganti src dengan link foto Rujak Cingur Anda sendiri -->
+                <img src="rujakjawa1.jpeg" alt="Rujak Cingur">
+                <div class="card-content">
+                    <div class="card-title">Rujak jawa</div>
+                    <p class="card-description">Rujak khas Jawa Timur dengan isian cingur sapi empuk, buah-buahan segar, sayuran, tahu, tempe, dan disiram bumbu petis udang yang mantap.</p>
+                    <div class="price">Rp 15.000</div>
+                    <!-- Ganti nomor 6281234567890 dengan nomor WhatsApp Anda -->
+                    <a href="https://wa.me/qr/HSFWLFQTX67BI1" target="_blank" class="btn-wa">
+                        Pesat Lewat WhatsApp
+                    </a>
+                </div>
+            </div>
+           <div class="card">
+                <!-- Ganti src dengan link foto Rujak Cingur Anda sendiri -->
+                <img src="rujakcingur1.jpeg" alt="Rujak Cingur">
+                <div class="card-content">
+                    <div class="card-title">Rujak Cingur Spesial</div>
+                    <p class="card-description">Rujak cingur dengan isian cingur sapi empuk, buah-buahan segar, sayuran, tahu, tempe, dan disiram bumbu petis udang yang mantap.</p>
+                    <div class="price">Rp 17.000</div>
+                    <!-- Ganti nomor 6281234567890 dengan nomor WhatsApp Anda -->
+                    <a href="https://wa.me/qr/HSFWLFQTX67BI1" target="_blank" class="btn-wa">
+                        Pesat Lewat WhatsApp
+                    </a>
+                </div>
+           </div>
+
+            <!-- Menu 2: Es Jadul -->
+            <div class="card">
+                <!-- Ganti src dengan link foto Es Jadul Anda sendiri -->
+                <img src="esgabus.jpeg" alt="Es gabus">
+                <div class="card-content">
+                    <div class="card-title">Es gabus</div>
+                    <p class="card-description">Segarnya es gabus jadul dengan varian rasa buah-buahan berlumur sirup merah manis alami. Mengembalikan memori manis masa kecil Anda.</p>
+                    <div class="price">Rp 5.000</div>
+                    <!-- Ganti nomor 6281234567890 dengan nomor WhatsApp Anda -->
+                    <a href="https://wa.me/qr/HSFWLFQTX67BI1" target="_blank" class="btn-wa">
+                        Pesan Lewat WhatsApp
+                    </a>
+                </div>
+            </div>
+          <div class="card">
+                <!-- Ganti src dengan link foto Es Jadul Anda sendiri -->
+                <img src="esserut.jpeg" alt="Es serut">
+                <div class="card-content">
+                    <div class="card-title">Es gabus</div>
+                    <p class="card-description">Segarnya es serut jadul dengan varian rasa buah-buahan berlumur sirup merah manis alami. Mengembalikan memori manis masa kecil Anda.</p>
+                    <div class="price">Rp 5.000</div>
+                    <!-- Ganti nomor 6281234567890 dengan nomor WhatsApp Anda -->
+                    <a href="https://wa.me/qr/HSFWLFQTX67BI1" target="_blank" class="btn-wa">
+                        Pesan Lewat WhatsApp
+                    </a>
+                </div>
+          </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Warung Rasa Nusantara. Semua Hak Dilindungi.</p>
+    </footer>
+
+</body>
+  </html>
